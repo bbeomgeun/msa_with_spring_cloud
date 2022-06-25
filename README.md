@@ -23,3 +23,11 @@ demo project with msa with springCloud
 - zuul-service : 8080
   - 2.3.10.RELEASE (2.4 미만 버전에서 zuul 사용 가능)
 - 이후 zuul-service 포트로 호출 시 각 서비스로 라우팅
+
+### zuul logging filter
+- zuulFilter를 상속 받아서 구현
+- 서비스로 들어오는 요청에 대한 로깅 작업을 할 수 있음
+
+## Spring Cloud Gateway
+- Spring에서 자체적으로 Gateway를 만들어서 zuul 서비스를 대체
+- zuul과 달리 **비동기 처리**가 가능해진다는 점
