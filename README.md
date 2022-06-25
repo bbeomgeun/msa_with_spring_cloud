@@ -16,3 +16,10 @@ demo project with msa with springCloud
 ## user-service
 - port : 9001
 - netflix-eureka-client
+
+## netflix-zuul 테스트
+- first-service : 8081
+- second-service : 8082
+- zuul-service : 8080
+  - 2.3.10.RELEASE (2.4 미만 버전에서 zuul 사용 가능)
+- 이후 zuul-service 포트로 호출 시 각 서비스로 라우팅
